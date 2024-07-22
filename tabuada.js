@@ -16,4 +16,6 @@ function calculo() {
             c++
         }
     }
+    numero.value = ''
+    numero.focus()
 }
