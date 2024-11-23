@@ -1,26 +1,104 @@
-body {
-    background: linear-gradient(90deg, rgba(78,78,54,1) 0%, rgba(255,231,0,1) 50%, rgba(78,78,54,1) 100%); /*Cor das página */
-    font: normal 20pt arial; /*Letra do site */
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header {
-    color: white; /*Cor do título */
-    text-align: center; /*Local do título */
-    margin-top: 100px;
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 20px;
 }
 
-section {
-    background: white; /*Cor da borda */
-    border-radius: 10px;padding: 15px; /*Formato da borda */
-    padding: 15px; /*Tamanho da borda */
-    width: 500px; /*Largura da borda */
-    margin: auto; /*Local da margem */
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /*Sombra embaixo da margem */
+header{
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
 }
 
-footer {
-    color: white; /*Cor do meu nome */
-    text-align: center; /*Local do meu nome */
-    font-style: italic; /*Estilo da fonte */
+h1{
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+section{
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+div{
+    margin-bottom: 15px;
+}
+
+input[type="number"]{
+    padding: 8px;
+    margin-right: 10px;
+    width: 150px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+input[type="button"]{
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+input[type="button"]:hover{
+    background-color: #45a049;
+}
+
+select{
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    margin-top: auto;
+}
+
+footer b{
+    font-weight: bold;
 }
